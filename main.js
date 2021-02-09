@@ -19,7 +19,10 @@ for (item of buttons) {
         else if (buttonText == '=') {
             screen.value = eval(screenValue);
         }
-        
+        else if(buttonText == '√'){
+          n = screen.value;
+          screenValue = Math.pow(n , 1/2)
+        }
         else {
             screenValue += buttonText;
             screen.value = screenValue;
@@ -27,4 +30,5 @@ for (item of buttons) {
 
     })
 }
+
 
